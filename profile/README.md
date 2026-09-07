@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="profile/assets/stormsale-hero.svg" alt="StormSale Protocol on Stellar & Soroban" width="100%" />
+<img src="https://raw.githubusercontent.com/StormSale/.github/main/profile/assets/stormsale-hero.svg" alt="StormSale Protocol on Stellar & Soroban" width="100%" />
 
 <br/>
 

@@ -1,32 +1,34 @@
 <div align="center">
 
-# ⚡ StormSale Protocol
+<img src="profile/assets/stormsale-hero.svg" alt="StormSale Protocol on Stellar & Soroban" width="100%" />
 
-**Storm the market. Break the prices.**  
-*The Next-Generation Trustless Affiliate & Merchant Escrow Protocol on Stellar & Soroban.*
+<br/>
 
-[![Stellar](https://img.shields.io/badge/Stellar-Soroban%20Smart%20Contracts-black?style=for-the-badge&logo=stellar&logoColor=white)](https://stellar.org)
-[![Network](https://img.shields.io/badge/Network-Testnet%20Active-00b4d8?style=for-the-badge)](https://stellar.expert/explorer/testnet)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
-[![Community](https://img.shields.io/badge/Community-SCF%20Ready-6366f1?style=for-the-badge)](https://communityfund.stellar.org)
+[![Stellar Network](https://img.shields.io/badge/Stellar-Soroban%20Smart%20Contracts-0ea5e9?style=for-the-badge&logo=stellar&logoColor=white)](https://stellar.org)
+[![Network: Testnet](https://img.shields.io/badge/Network-Testnet%20Active-6366f1?style=for-the-badge)](https://stellar.expert/explorer/testnet)
+[![License: MIT](https://img.shields.io/badge/License-MIT-10b981.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Freighter Wallet](https://img.shields.io/badge/Wallet-Freighter%20v6+-a855f7?style=for-the-badge)](https://www.freighter.app/)
+[![SCF](https://img.shields.io/badge/Ecosystem-Stellar%20Community%20Fund-38bdf8?style=for-the-badge)](https://communityfund.stellar.org)
 
 <p align="center">
-  <a href="https://github.com/StormSale/Storm-Contract"><b>Soroban Contracts</b></a> •
-  <a href="https://github.com/StormSale/StormSale"><b>Frontend dApp</b></a> •
-  <a href="https://github.com/StormSale/StormSale-backend"><b>Backend API</b></a> •
-  <a href="#-architecture"><b>Architecture</b></a> •
-  <a href="#-contributing"><b>Contributing</b></a>
+  <a href="https://github.com/StormSale/Storm-Contract"><b>⚡ Soroban Contracts</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/StormSale/StormSale"><b>💻 Frontend dApp</b></a> &nbsp;•&nbsp;
+  <a href="https://github.com/StormSale/StormSale-backend"><b>⚙️ Backend API</b></a> &nbsp;•&nbsp;
+  <a href="#-architecture"><b>🏛️ Architecture</b></a> &nbsp;•&nbsp;
+  <a href="#-contributing"><b>🤝 Contributing</b></a>
 </p>
 
 ---
 
 </div>
 
-## 🌐 Overview
+## 🌐 Protocol Mission
 
-**StormSale** is a decentralized, non-custodial affiliate marketing and commission clearing protocol engineered natively for the **Stellar Network** using **Soroban Rust Smart Contracts**.
+**StormSale** is a decentralized, non-custodial affiliate marketing and merchant escrow clearing protocol built natively for the **Stellar Network** using **Soroban Rust Smart Contracts**.
 
-Traditional affiliate networks suffer from high intermediary fees (15–30%), opaque attribution, multi-week payout delays, and chargeback fraud. StormSale replaces centralized middlemen with **deterministic Soroban escrows**, cryptographic sale validation, and **instant, sub-cent XLM commission payouts**.
+In traditional Web2 affiliate marketing, merchants and affiliates lose up to **30% in platform fees**, wait **30–60 days for commission payouts**, and suffer from opaque attribution and chargeback fraud. 
+
+StormSale eliminates centralized middlemen by orchestrating deterministic smart-contract escrows, sub-second finality, and cryptographic commission settlement.
 
 ```
 ┌─────────────────┐       Create Campaign & Deposit Escrow       ┌────────────────────────┐
@@ -42,39 +44,59 @@ Traditional affiliate networks suffer from high intermediary fees (15–30%), op
 
 ## 🏛️ Ecosystem Architecture & Repositories
 
-The StormSale organization maintains three decoupled, production-grade repositories:
+The protocol is organized into three production-grade, decoupled repositories:
 
-| Repository | Focus | Tech Stack | Status |
+| Repository | Scope | Core Technologies | Health Status |
 | :--- | :--- | :--- | :---: |
-| [**`Storm-Contract`**](https://github.com/StormSale/Storm-Contract) | Core Soroban Smart Contracts, campaign escrows, commission logic, and clearance engine | Rust, Soroban SDK v22, WASM | ![Tests](https://img.shields.io/badge/tests-passing-brightgreen) |
-| [**`StormSale`**](https://github.com/StormSale/StormSale) | Modern Web3 dApp, role-based dashboards (Advertiser, Affiliate, Auditor), Freighter wallet integration | React 18, Vite, TypeScript, TailwindCSS, `@stellar/freighter-api` | ![Build](https://img.shields.io/badge/build-passing-brightgreen) |
-| [**`StormSale-backend`**](https://github.com/StormSale/StormSale-backend) | High-performance off-chain indexer, metadata storage, and Stellar RFC 4648 Base32 validation API | Node.js, Express, TypeScript, Prisma ORM, PostgreSQL | ![Tests](https://img.shields.io/badge/tests-passing-brightgreen) |
+| [**`Storm-Contract`**](https://github.com/StormSale/Storm-Contract) | Core Soroban Smart Contracts, campaign escrows, affiliate registry, instant XLM payouts | Rust, Soroban SDK v22, WASM, Dalek Crypto | ![Tests](https://img.shields.io/badge/cargo%20test-passing-10b981) |
+| [**`StormSale`**](https://github.com/StormSale/StormSale) | Next-Gen Web3 dApp, role dashboards (Advertiser, Affiliate, Auditor), Freighter wallet connection | React 18, Vite, TypeScript, TailwindCSS, `@stellar/freighter-api` | ![Build](https://img.shields.io/badge/vite%20build-passing-0ea5e9) |
+| [**`StormSale-backend`**](https://github.com/StormSale/StormSale-backend) | High-speed indexing service, Stellar RFC 4648 Base32 public key validation API | Node.js, Express, TypeScript, Prisma ORM, PostgreSQL | ![Tests](https://img.shields.io/badge/npm%20test-passing-6366f1) |
+
+---
+
+## ⚡ Why Stellar & Soroban?
+
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <br/>
+      <h3>⏱️ &lt; 1s Finality</h3>
+      <p>Instant commission settlements. No 30-day payout holding periods.</p>
+    </td>
+    <td width="33%" align="center">
+      <br/>
+      <h3>💎 $0.00001 Fees</h3>
+      <p>Near-zero transaction costs allow micro-affiliate payouts and high-frequency conversion logging.</p>
+    </td>
+    <td width="33%" align="center">
+      <br/>
+      <h3>🔒 Non-Custodial</h3>
+      <p>Funds remain locked in deterministic Soroban escrow contracts. Zero custodial counterparty risk.</p>
+    </td>
+  </tr>
+</table>
 
 ---
 
 ## 🚀 Key Technical Highlights
 
-- **Native Stellar & Soroban Architecture**: Zero legacy EVM dependencies. Pure `@stellar/stellar-sdk` and `@stellar/freighter-api` integration.
-- **Sub-Second Finality & Micro-Cent Costs**: Leverages Stellar's consensus mechanism for real-time affiliate payout settlements.
-- **Cryptographic Attribution**: End-to-end encrypted payload verification for private sale attribution without exposing proprietary customer data.
+- **Native Stellar Architecture**: Zero legacy EVM baggage. Integrated with `@stellar/stellar-sdk` and `@stellar/freighter-api`.
+- **NIST-Level Data Confidentiality**: Proprietary conversion data is encrypted off-chain using AES-GCM/ECIES before on-chain hash attestation.
 - **Strict RFC 4648 Base32 Validation**: Rigorous runtime validation on all Stellar account addresses (`G...`) and Soroban contract IDs (`C...`).
-- **Comprehensive Contributor Governance**: 100% GitHub Community Standards compliance across all repositories, including MIT licensing, Contributor Covenant v2.1, and standardized PR/issue triage templates.
+- **Complete Contributor Governance**: 100% GitHub Community Standards score across all repositories (MIT License, Contributor Covenant v2.1, and issue/PR templates).
 
 ---
 
-## 📊 Quick Links & Resources
+## 🤝 Community & Governance
 
-- 📜 **Smart Contract Audit & Standard**: [`repository_standard_audit.md`](https://github.com/StormSale/Storm-Contract/blob/main/README.md)
-- 🤝 **Grant Dossier**: Prepared for the [Stellar Community Fund (SCF)](https://communityfund.stellar.org)
-- 🛡️ **Security Policy**: Read our [Vulnerability Disclosure Policy](https://github.com/StormSale/StormSale/blob/main/SECURITY.md)
-- 💬 **Get in Touch**: Security inquiries at `security@stormsale.xyz`
+We welcome developers, merchants, and affiliates to build on top of StormSale!
 
----
+- 📜 **Contributing Guidelines**: [CONTRIBUTING.md](https://github.com/StormSale/StormSale/blob/main/CONTRIBUTING.md)
+- 🛡️ **Vulnerability Disclosure**: [SECURITY.md](https://github.com/StormSale/StormSale/blob/main/SECURITY.md)
+- 🕊️ **Code of Conduct**: [CODE_OF_CONDUCT.md](https://github.com/StormSale/StormSale/blob/main/CODE_OF_CONDUCT.md)
+- 💬 **Direct Contact**: `security@stormsale.xyz`
 
-## 🤝 Contributing
-
-We welcome open-source contributions from the Stellar and Web3 developer communities! 
-Please review our [Contributing Guidelines](https://github.com/StormSale/StormSale/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/StormSale/StormSale/blob/main/CODE_OF_CONDUCT.md) before submitting pull requests.
+<br/>
 
 <div align="center">
   <sub>Built with ❤️ for the Stellar Ecosystem • © 2026 StormSale Protocol</sub>
